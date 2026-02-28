@@ -1,0 +1,18 @@
+backend node server.js
+
+frontend npx serve .
+
+auth
+// @route   POST     /api/auth/register
+// @route   POST /api/auth/login
+
+events
+get all
+ // @route   GET /api/events
+ add new
+ // @route   POST /api/events
+ delete
+ // @route   DELETE /api/events/:id
+
+ // @route   POST /api/events/:id/apply
+
