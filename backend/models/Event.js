@@ -6,8 +6,9 @@ const eventSchema = new mongoose.Schema({
     date: { type: Date, required: true },
     location: { type: String, required: true },
     
-    appliedUsers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }] // Array of user IDs who applied to this event
+    appliedUsers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }]  
 }, { timestamps: true });
 
 module.exports = mongoose.model('Event', eventSchema);
+
 
